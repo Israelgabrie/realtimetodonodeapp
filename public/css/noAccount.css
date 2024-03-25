@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .error-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .error-container h2 {
+    color: #ff4646;
+  }
+
+  .error-message {
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .back-to-login {
+    margin-top: 20px;
+  }
+
+  .back-to-login a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }

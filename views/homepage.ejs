@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+  <title>Stylish ToDo List</title>
+</head>
+<body>
+  <div class="todo-container">
+    <h1><%= userName%> ToDo List</h1>
+    <div class="todo-list">
+        <div class="add-todo">
+            <input type="text" id="todoValue" placeholder="Add a new todo">
+            <button class="add-btn" id="addTodo">Add</button>
+          </div>
+          <div id="todo-list">
+
+          </div>
+      <!-- Add more todo items as needed -->
+    </div>
+  </div>
+
+  <div style="display: none;">
+    <%= userEmail  %>
+    <%= userTable %>
+  </div>
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+  <script defer src="js/homepage.js"></script>
+</body>
+</html>
+<script>
+    var email = '<%= userEmail  %>';
+    var tableName = '<%= userTable %>';
+</script>
